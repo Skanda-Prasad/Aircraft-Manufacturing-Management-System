@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="admindex.css">
+</head>
+<body>
+    <div class="admin-dashboard">
+        <h1>Admin Dashboard</h1>
+
+        <div class="action-buttons">
+            <button id="create-aircraft-model">Create Aircraft Model</button>
+            <button id="create-aircraft-component">Create Aircraft Component</button>
+            <button id="create-supplier">Create Supplier</button>
+            <button id="create-employee">Create Employee</button>
+            <button id="create-production-line">Create Production Line</button>
+            <button id="create-aircraft-order">Create Aircraft Order</button>
+            <button id="create-customer">Create Customer</button>
+        </div>
+
+        <button id="logout" style="margin-top: 10%; border-radius: 5px; background-color: #ff5733; color: #ffffff;">Logout</button>
+    </div>
+
+
+   <!-- Create Aircraft Model Dialog -->
+   <div class="dialog" id="create-aircraft-model-dialog">
+       <h2>Create Aircraft Model</h2>
+       <form id="model-form">
+           <!-- Add form fields for aircraft_model table as needed -->
+           <button type="submit">Submit</button>
+           <button id="cancel-model" type="button">Cancel</button>
+       </form>
+   </div>
+
+   <!-- Create Aircraft Component Dialog -->
+   <div class="dialog" id="create-aircraft-component-dialog">
+       <h2>Create Aircraft Component</h2>
+       <form id="component-form">
+           <!-- Add form fields for aircraft_component table as needed -->
+           <button type="submit">Submit</button>
+           <button id="cancel-component" type="button">Cancel</button>
+       </form>
+   </div>
+ 
+    <!-- Create Supplier Dialog -->
+<div class="dialog" id="create-supplier-dialog">
+   <h2>Create Supplier</h2>
+   <form id="supplier-form">
+       <!-- Add form fields for supplier table as needed -->
+       <button type="submit">Submit</button>
+       <button id="cancel-supplier" type="button">Cancel</button>
+   </form>
+</div>
+
+<!-- Create Employee Dialog -->
+<div class="dialog" id="create-employee-dialog">
+   <h2>Create Employee</h2>
+   <form id="employee-form">
+       <!-- Add form fields for employee table as needed -->
+       <button type="submit">Submit</button>
+       <button id="cancel-employee" type="button">Cancel</button>
+   </form>
+</div>
+
+<!-- Create Production Line Dialog -->
+<div class="dialog" id="create-production-line-dialog">
+   <h2>Create Production Line</h2>
+   <form id="production-line-form">
+       <!-- Add form fields for production_line table as needed -->
+       <button type="submit">Submit</button>
+       <button id="cancel-production-line" type="button">Cancel</button>
+   </form>
+</div>
+
+<!-- Create Aircraft Order Dialog -->
+<div class="dialog" id="create-aircraft-order-dialog">
+   <h2>Create Aircraft Order</h2>
+   <form id="aircraft-order-form">
+       <!-- Add form fields for aircraft_order table as needed -->
+       <button type="submit">Submit</button>
+       <button id="cancel-aircraft-order" type="button">Cancel</button>
+   </form>
+</div>
+
+<!-- Create Customer Dialog -->
+<div class="dialog" id="create-customer-dialog">
+   <h2>Create Customer</h2>
+   <form id="customer-form">
+       <!-- Add form fields for customer table as needed -->
+       <button type="submit">Submit</button>
+       <button id="cancel-customer" type="button">Cancel</button>
+   </form>
+</div>
+
+
+    <script src="adminscript.js"></script>
+</body>
+</html>

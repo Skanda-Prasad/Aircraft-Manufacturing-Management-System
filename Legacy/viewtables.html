@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>Admin Dashboard</title>
+   <link rel="stylesheet" type="text/css" href="admindex.css">
+</head>
+<body>
+   <div class="Content Viewer">
+       <h1>Admin Dashboard</h1>
+       <div class="admin-actions" style="text-align: center;">
+           <!-- Add more buttons for viewing data as needed -->
+           <button style="margin: 10px 0 ;" id="view-aircraft-models">View Aircraft Models</button>
+           <button style="margin: 10px 0 ;" id="view-aircraft-components">View Aircraft Components</button>
+           <button style="margin: 10px 0 ;" id="view-suppliers">View Suppliers</button>
+           <button style="margin: 10px 0 ;" id="view-employees">View Employees</button>
+           <button style="margin: 10px 0 ;" id="view-production-lines">View Production Lines</button>
+           <button style="margin: 10px 0 ;" id="view-aircraft-orders">View Aircraft Orders</button>
+           <button style="margin: 10px 0 ;" id="view-customers">View Customers</button>
+           <button style="margin: 10px 0 ;" id="view-component-inventory">View Component Inventory</button>
+           <!-- Add buttons for other tables as needed -->
+       </div>
+       <button id="logout" style="margin-top: 10%; border-radius: 5px; background-color: #ff5733; color: #ffffff;">Logout</button>
+   </div>
+
+   <!-- Aircraft Model Table -->
+   <div class="table-view" id="aircraft-model-table">
+       <h2>Aircraft Model Table</h2>
+       <table border="1">
+           <tr>
+               <th>Model ID</th>
+               <th>Model Name</th>
+               <th>Manufacturer</th>
+               <th>Capacity</th>
+               <th>Max Range</th>
+               <th>MTOW</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Aircraft Component Table -->
+   <div class="table-view" id="aircraft-component-table">
+       <h2>Aircraft Component Table</h2>
+       <table border="1">
+           <tr>
+               <th>Component ID</th>
+               <th>Component Name</th>
+               <th>Manufacturer</th>
+               <th>Weight</th>
+               <th>Cost</th>
+               <th>Supplier ID</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Supplier Table -->
+   <div class="table-view" id="supplier-table">
+       <h2>Supplier Table</h2>
+       <table border="1">
+           <tr>
+               <th>Supplier ID</th>
+               <th>Name</th>
+               <th>Contact Info</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Employee Table -->
+   <div class="table-view" id="employee-table">
+       <h2>Employee Table</h2>
+       <table border="1">
+           <tr>
+               <th>Employee ID</th>
+               <th>Full Name</th>
+               <th>Position</th>
+               <th>Contact Info</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Production Line Table -->
+   <div class="table-view" id="production-line-table">
+       <h2>Production Line Table</h2>
+       <table border="1">
+           <tr>
+               <th>Line ID</th>
+               <th>Line Name</th>
+               <th>Location</th>
+               <th>Capacity</th>
+               <th>Supervisor ID</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Aircraft Order Table -->
+   <div class="table-view" id="aircraft-order-table">
+       <h2>Aircraft Order Table</h2>
+       <table border="1">
+           <tr>
+               <th>Order ID</th>
+               <th>Customer ID</th>
+               <th>Date Placed</th>
+               <th>Order Status</th>
+               <th>Total Cost</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Customer Table -->
+   <div class="table-view" id="customer-table">
+       <h2>Customer Table</h2>
+       <table border="1">
+           <tr>
+               <th>Customer ID</th>
+               <th>Customer Name</th>
+               <th>Contact Info</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <!-- Component Inventory Table -->
+   <div class="table-view" id="component-inventory-table">
+       <h2>Component Inventory Table</h2>
+       <table border="1">
+           <tr>
+               <th>Inventory ID</th>
+               <th>Component ID</th>
+               <th>Quantity</th>
+               <th>Location</th>
+               <th>Supplier ID</th>
+               <th>Expiration Date</th>
+           </tr>
+           <!-- Populate this section dynamically using JavaScript -->
+       </table>
+   </div>
+
+   <script src="adminscript.js"></script>
+</body>
+</html>
